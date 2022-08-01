@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <head>
 <title>Cambi gruppo Camera XVIII</title>
 <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
@@ -20,7 +19,7 @@
   
 <div id="main-wrapper">
 <div id="sidebar">
-<div id="title">Visualizzazione dei cambi di gruppo parlamentare alla Camera dei Deputati durante la XVIII legislatura (al 2022-07-29)</div>
+<div id="title">Visualizzazione dei cambi di gruppo parlamentare alla Camera dei Deputati durante la XVIII legislatura (al 2022-08-01)</div>
 <div id="current_time">2018-3-23</div>
 <div id="speed">
 <div id="block_container">
@@ -132,7 +131,7 @@ var svg = d3.select("#chart").append("svg")
   
   
 //Data loading   
-d3.csv('https://gist.githubusercontent.com/vi-enne/7c489a661e8a5cdbfb6fb0efba0ea237/raw/c5a284e02ee79f1678c8f14c181a03210b677abb/camera18', function(data) {
+d3.csv('https://gist.githubusercontent.com/vi-enne/7c489a661e8a5cdbfb6fb0efba0ea237/raw/5df2ae22c022a852693dc446a6ad7712d30cc860/camera18', function(data) {
 	data.forEach(function(d) {
 		var day_array = d.day.split(",");
 		var activities = [];
@@ -272,7 +271,7 @@ d3.csv('https://gist.githubusercontent.com/vi-enne/7c489a661e8a5cdbfb6fb0efba0ea
 			});
 	
 		// Update time
-		var end_time = 1953
+		var end_time = 1957
 		var true_time = curr_time % end_time;
 		d3.select("#current_time").text(daysToDate(true_time));
 		
@@ -397,7 +396,7 @@ function color(activity) {
 		"7": "#f06292",
 		"8": "#0d47a1",
 		"9": "#303f9f",
-		"10": "#eceff1",
+		"10": "#d7ccc8",
 	}
 	
 	return colorByActivity[activity];
@@ -421,7 +420,7 @@ function readablePercent(n) {
 
 // Day. Data is days from 2018-03-23.
 function daysToDate(m) {
-    m = Math.min(m,1590);
+    m = Math.min(m,1593);
     var d = new Date("2018-03-23");
     d.setDate(d.getDate()+m);
     var y = d.getFullYear();

@@ -42,7 +42,9 @@
 Autore: <a href="https://twitter.com/vi__enne" target="_blank" rel="noopener">V. Nicoletta</a> - 
 Dati: <a href="https://parlamento18.openpolis.it/i-gruppi-in-parlamento/camera" target="_blank" rel="noopener">Openpolis</a> 
 (licenza 
-<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC-BY-NC-SA 4.0</a>)
+<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC-BY-NC-SA 4.0</a>) - 
+<a href="https://vi-enne.github.io/cambiSenato18/" target="_blank" rel="noopener"><i>Cambi Senato clicca qui</i></a>
+<br>
 <br>
 Basato sulla visualizzazione 
 <a href="https://flowingdata.com/2015/12/15/a-day-in-the-life-of-americans/" target="_blank" rel="noopener">A Day in the Life of Americans</a> di 

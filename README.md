@@ -19,7 +19,7 @@
   
 <div id="main-wrapper">
 <div id="sidebar">
-<div id="title">Visualizzazione dei cambi di gruppo parlamentare alla Camera dei Deputati durante la XVIII legislatura (al 2022-09-20)</div>
+<div id="title">Visualizzazione dei cambi di gruppo parlamentare alla Camera dei Deputati durante la XVIII legislatura</div>
 <div id="current_time">2018-3-23</div>
 <div id="speed">
 <div id="block_container">
@@ -98,6 +98,7 @@ var time_notes = [
 	{ "start_time": 1064, "stop_time": 1159, "note": "Espulsione deputati M5S che non hanno votato la fiducia al governo Draghi" },
 	{ "start_time": 1160, "stop_time": 1260, "note": "Nasce Coraggio Italia" },
 	{ "start_time": 1550, "stop_time": 1650, "note": "Nasce Insieme Per il Futuro - Cessa di esistere Coraggio Italia" },
+	{ "start_time": 1665, "stop_time": 2029, "note": "Fine XVIII legislatura della Repubblica Italiana" },
 
 ];
 var notes_index = 0;
@@ -133,7 +134,7 @@ var svg = d3.select("#chart").append("svg")
   
   
 //Data loading   
-d3.csv('https://gist.githubusercontent.com/vi-enne/7c489a661e8a5cdbfb6fb0efba0ea237/raw/1cd2c5a8b9467b7ddec209dfbf6e320a26458670/camera18', function(data) {
+d3.csv('https://gist.githubusercontent.com/vi-enne/7c489a661e8a5cdbfb6fb0efba0ea237/raw/a3990f41f623c67a8d875e0401c7b986ba4b170c/camera18', function(data) {
 	data.forEach(function(d) {
 		var day_array = d.day.split(",");
 		var activities = [];
@@ -273,7 +274,7 @@ d3.csv('https://gist.githubusercontent.com/vi-enne/7c489a661e8a5cdbfb6fb0efba0ea
 			});
 	
 		// Update time
-		var end_time = 2008
+		var end_time = 2030
 		var true_time = curr_time % end_time;
 		d3.select("#current_time").text(daysToDate(true_time));
 		
@@ -422,7 +423,7 @@ function readablePercent(n) {
 
 // Day. Data is days from 2018-03-23.
 function daysToDate(m) {
-    m = Math.min(m,1643);
+    m = Math.min(m,1665);
     var d = new Date("2018-03-23");
     d.setDate(d.getDate()+m);
     var y = d.getFullYear();
